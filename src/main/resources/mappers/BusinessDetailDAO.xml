@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?> <!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.business.dao.BusinessDetailDAO">
+    <resultMap id="BusinessDetailMap"
+               type="com.business.domain.BusinessDetail">
+        <id property="id" column="id"/>
+
+        <result property="businessId" column="business_id"/>
+        <result property="businessPassword" column="business_password"/>
+        <result property="businessEmail" column="business_email"/>
+
+        <result property="businessName" column="business_name"/>
+
+        <result property="businessPhone" column="business_phone"/>
+        <result property="businessAddressDetail" column="business_address_detail"/>
+        <result property="businessAddressCity" column="business_address_city"/>
+        <result property="businessAddressProvince" column="business_address_province"/>
+        <result property="businessAddressCounty" column="business_address_county"/>
+        <result property="businessWechat" column="business_wechat"/>
+        <result property="createdTime" column="created_time"/>
+        <result property="modifiedTime" column="modified_time"/>
+        <result property="creator" column="creator"/>
+        <result property="modifier" column="modifier"/>
+
+    </resultMap>
+    <insert id="insertBusinessDetail" parameterType="BusinessDetail">
+        INSERT into business_detail(business_id,business_password,business_email,business_name,business_phone,business_address_detail,business_address_city,business_address_province,business_address_county,business_wechat,created_time,modified_time,creator,modifier) VALUE (#{businessId},#{businessPassword},#{businessEmail},#{businessName},#{businessPhone},#{businessAddressDetail},#{businessAddressCity},#{businessAddressProvince},#{businessAddressCounty},#{businessWechat},now(),now(),#{creator},#{modifier})
+
+    </insert>
+    <select id="getBusinessDetailByPhone" resultMap="BusinessDetailMap">
+        select * from business_detail where business_phone=#{businessPhone}
+    </select>
+
+    <select id="getBusinessDetailByName" resultMap="BusinessDetailMap">
+        select * from business_detail where business_name=#{businessName}
+    </select>
+</mapper>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?> <!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.business.dao.CouponDAO">
+    <resultMap id="CouponMap"
+               type="com.business.domain.Coupon">
+
+        <id property="id" column="id"/>
+
+        <result property="businessId" column="business_id"/>
+        <result property="couponCode" column="coupon_code"/>
+        <result property="startTime" column="start_time"/>
+
+        <result property="endTime" column="end_time"/>
+
+        <result property="cardMsg" column="card_msg"/>
+
+        <result property="createdTime" column="created_time"/>
+        <result property="modifiedTime" column="modified_time"/>
+        <result property="creator" column="creator"/>
+        <result property="modifier" column="modifier"/>
+        <result property="isDeleted" column="is_deleted"/>
+
+    </resultMap>
+
+    <select id="getCouponByCode" resultMap="CouponMap">
+        select * from coupon where coupon_code = #{couponCode} and is_deleted='N'
+
+    </select>
+
+</mapper>

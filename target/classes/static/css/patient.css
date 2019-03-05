@@ -1,0 +1,140 @@
+body{
+	overflow-y: hidden;
+	background-color: #f4f4f4;
+}
+/*内容区*/
+#wrap{
+	width: 100%;
+	background-color: #fff;
+	margin-top: 0.1rem;
+}
+#wrap span{
+	margin-left: 0.08rem;
+	font-size: 0.14rem;
+}
+#wrap .name {
+	height: 0.48rem;
+	line-height: 0.48rem;
+	border-bottom: 1px solid #E6E6E6;
+}
+#wrap .name input{
+	color:#A4A4A4;
+	border: none;
+	width: 1rem;
+	height: 0.3rem;
+	font-size: 0.125rem;
+	margin-left: 1.7rem;
+	text-indent: 0.25rem;
+	line-height: 0.3rem;
+}
+#wrap .sex{
+	height: 0.48rem;
+	line-height: 0.48rem;
+	position: relative;
+	border-bottom: 1px solid #E6E6E6;
+}
+#wrap .sex .sex-cho{
+	position: absolute;
+	right: 0.1rem;
+	top: 0;
+	width: 1rem;
+	display: flex;
+}
+#wrap .sex .sex-cho i{
+	font-style: normal;
+	color: #a4a4a4;
+	margin:0 0.08rem;
+	font-size: 0.15rem;
+}
+#wrap .sex .sex-cho div{
+	margin-top: 0.16rem;
+	width: 0.17rem;
+	height: 0.17rem;
+	border-radius: 50%;
+	border: 1px solid #ccc;
+}
+#wrap .sex .sex-cho .i-man{
+	background: url(../img/zhifu_xuan@2x.png) no-repeat left top;
+
+}
+#wrap .sex .sex-cho .i-women{
+	background: url(../img/zhifu_xuan@2x.png) no-repeat left top;
+	background: none; 
+}
+
+#wrap .age{
+	height: 0.48rem;
+	line-height: 0.48rem;
+	border-bottom: 1px solid #e6e6e6;
+}
+#wrap .age .age-btn{
+    width: 1.9rem;
+    height: 0.4rem;
+    background: url(../img/wode_right.png) no-repeat right;
+    position: absolute;
+    right: 0.1rem;
+    border: none;
+    color: #a4a4a4;
+    text-align: right;
+    padding-right: 0.2rem;
+    line-height: 0.4rem;
+    margin-top: 0.03rem;
+}
+footer{
+	margin: 0.4rem auto;
+	height: 0.4rem;
+	width: 3.02rem;	
+	background: url("../img/kuai_btn@2x.png") no-repeat; 
+	background-size: 100%;
+}
+.illegalTips {
+	position: absolute;
+	width: 100%;
+	top: 35%;
+}
+
+.illegalTips div {
+	background-color: black;
+	margin: 0 auto;
+	color: white;
+	border-radius: 0.5rem;
+	padding: 0.1rem;
+	max-width: 100px;
+	text-align: center;
+	z-index: 99;
+}
+
+.hidenway {
+	display: none;
+}
+
+.right-leave {
+	display: block;
+}
+nav .title {
+	width: 100%;
+	height: 0.3rem;
+	font-size: 0.14rem;
+	text-align: center;
+	line-height: 0.3rem;
+	background: #fff;
+	margin-bottom:0.2rem ;
+}
+nav .title:before {
+	content: "";
+    display: inline-block;
+    width: 0.2rem;
+    height: 0.2rem;
+    background: url(../common/img/fanhui@2x.png) no-repeat center center;
+    background-size: 0.1rem 0.15rem;
+    float: left;
+    margin-top: 0.03rem;
+}
+.clearfix{
+	clear: both;
+}
+
+
+
+
+

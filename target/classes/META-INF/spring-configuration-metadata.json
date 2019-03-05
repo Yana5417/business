@@ -1,0 +1,62 @@
+{
+  "hints": [],
+  "groups": [
+    {
+      "sourceType": "com.business.utils.CommonPropContainer",
+      "name": "common.prop",
+      "type": "com.business.utils.CommonPropContainer"
+    }
+  ],
+  "properties": [
+    {
+      "sourceType": "com.business.utils.CommonPropContainer",
+      "name": "common.prop.admin-key",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.business.utils.CommonPropContainer",
+      "name": "common.prop.apt-service-url",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.business.utils.CommonPropContainer",
+      "name": "common.prop.call-system",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.business.utils.CommonPropContainer",
+      "name": "common.prop.ferry-service-url",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.business.utils.CommonPropContainer",
+      "name": "common.prop.password-key",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.business.utils.CommonPropContainer",
+      "name": "common.prop.plain-project",
+      "type": "java.lang.Boolean"
+    },
+    {
+      "sourceType": "com.business.utils.CommonPropContainer",
+      "name": "common.prop.root-user-id",
+      "type": "java.lang.Long"
+    },
+    {
+      "sourceType": "com.business.utils.CommonPropContainer",
+      "name": "common.prop.self-access-key",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.business.utils.CommonPropContainer",
+      "name": "common.prop.sms-ak",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.business.utils.CommonPropContainer",
+      "name": "common.prop.sms-sk",
+      "type": "java.lang.String"
+    }
+  ]
+}

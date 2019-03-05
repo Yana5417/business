@@ -1,0 +1,157 @@
+/*登陆注册修改密码css*/
+.btn-confirm {
+	background-color: #5da1ec;
+	border-radius: 4px;
+	color: white;
+	text-align: center;
+	height: 0.3rem;
+    margin-top: 0.7rem;
+}
+.confirms {
+	margin-top: 0.7rem;
+}
+.landFatherContainer {
+	background-color: white;
+	top: 0;
+	left: 0;
+	height: 100%;
+	z-index: 99;
+	position: absolute;
+	width: 100%;
+}
+
+.titleLand {
+	border-bottom: 1px solid #ccc;
+	height: 38px;
+	position: relative;
+	text-align: center;
+	line-height: 38px;
+	margin-bottom: 20px;
+	font-size: 16px;
+	background: #fff;
+}
+
+.landBack {
+	left: 0.1rem;
+	display: inline-block;
+	position: absolute;
+	width: 50px;
+	height: 38px;
+	background-size: cover;
+	text-align: left;
+	top: 0px;
+}
+
+.landBack span {
+	background-image: url(../../common/img/fanhui@2x.png);
+	width: 0.09rem;
+	height: 0.15rem;
+	background-size: cover;
+	display: inline-block;
+}
+.form-group {
+	position: relative;
+	height: 0.68rem;
+}
+#phoneMsg,
+#passwordMsg {
+	color: #8495b9;
+	width: 90%;
+	display: block;
+	padding-left: 0.1rem;
+}
+.phoneNum {
+    width: 100%;
+    height: 0.3rem;
+    text-align: center;
+}
+.phoneNum a {
+	color: #333;
+}
+.otherLogin{
+    margin-top: 2rem;
+    text-align: center;
+}
+.otherLogin .line {
+    width: 0.8rem;
+    border-bottom: 1px solid #ccc;
+    display: inline-block;
+    margin: 0.08rem;
+    vertical-align: middle;
+}
+.otherLogin .text{
+	color:#737373;
+}
+.code {
+	outline: none;
+}
+#register {
+	margin-top: 0.8rem;
+}
+#phone, #code{
+	width: 80%;
+	margin: 0.41rem auto 0.05rem auto;
+	border:none;
+	display: inline-block;
+	box-shadow:none;
+}
+.icon{
+	width: 0.22rem;
+	height: 0.22rem;
+	display: inline-block;
+	margin-left: 5%;
+}
+.line{
+	width: 90%;
+	height: 1px;
+	background-color: #e6e6e6;
+	margin: auto;
+}
+#password{
+	width: 58%;
+	margin: 0.33rem auto 0.05rem auto;
+	border:none;
+	display: inline-block;
+	box-shadow:none;
+}
+#login{
+	width: 2.79rem;
+	height: 0.49rem;
+	margin: 0.24rem auto;
+	background: rgba(230, 130, 23, 1) !important;
+	background-size: cover;
+	color: #fff;
+	border-radius: 0.58rem;
+	font-size: 1.2em;
+	margin-left: 0.2rem;
+}
+.twoChoic{
+	width: 90%;
+	margin: auto;
+}
+.twoChoic #forgetPassword{
+	float: right;
+}
+.twoChoic #quickLogin{
+	float: left;
+}
+.pass-eyes{
+	position: absolute;
+	display: inline-block;
+	background: url(../img/icon3@2x.png) no-repeat;
+	background-size: cover;
+	width: 0.2rem;
+	height: 0.16rem;
+	right: 0.2rem;
+	top: 0.35rem;
+}
+.phone, .code {
+	margin-bottom: 0px;
+}
+.pass {
+	margin-bottom: 0.27rem;
+}
+#imgObj {
+	width: 0.7rem;
+  height: 0.2rem;
+}

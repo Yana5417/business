@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?> <!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.business.dao.AreaDAO">
+    <resultMap id="AreaMap"
+               type="com.business.domain.Area">
+        <id property="areaId" column="area_id"/>
+        <result property="areaName" column="area_name"/>
+        <result property="parentAreaId" column="parent_area_id"/>
+        <result property="order" column="order"/>
+    </resultMap>
+
+    <select id="listAreasByParentId" resultMap="AreaMap">
+        select * from area where parent_area_id = #{parentAreaId}
+
+    </select>
+</mapper>

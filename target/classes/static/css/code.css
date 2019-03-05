@@ -1,0 +1,19 @@
+.input-group {
+  width: 95%;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+#code {
+  border: 1px solid #eee;
+  border-radius: 4px;
+  box-shadow: none;
+}
+#getCode{
+  display: block;
+  background-color: rgba(230, 120, 23, 1);
+  color: #fff;
+  width: 95%;
+  margin: 0.2rem auto;
+  padding: 0.08rem;
+  border-radius: 4px;
+}

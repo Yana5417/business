@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?> <!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.business.dao.BusinessCouponDAO">
+    <resultMap id="BusinessCouponMap"
+               type="com.business.domain.BusinessCoupon">
+
+        <id property="id" column="id"/>
+
+        <result property="businessId" column="business_id"/>
+        <result property="couponCode" column="coupon_code"/>
+
+        <result property="createdTime" column="created_time"/>
+        <result property="modifiedTime" column="modified_time"/>
+        <result property="creator" column="creator"/>
+        <result property="modifier" column="modifier"/>
+        <result property="isDeleted" column="is_deleted"/>
+
+    </resultMap>
+
+    <select id="getCouponByCodeAndBusinessId" resultMap="BusinessCouponMap">
+        select * from business_coupon where coupon_code = #{couponCode} and is_deleted='N' and business_id =#{businessId}
+
+    </select>
+    <insert id="exchangeCoupon" parameterType="BusinessCoupon">
+        INSERT into business_coupon(business_id,coupon_code,created_time,modified_time,creator,modifier,is_deleted) value(#{businessId},#{couponCode},now(),now(),'admin','admin','N')
+    </insert>
+</mapper>
